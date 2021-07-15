@@ -7,6 +7,7 @@ Review guide for developing with Spring Boot Framework
 - [Why Spring Boot?](#why-spring-boot)
 - [Spring vs. Spring Boot](#spring-vs-spring-boot)
 - [Initializing a Spring Boot Project](#initializing-a-spring-boot-project)
+- [Sources](#sources)
 
 ### What is Spring Boot?
 - Spring Boot is a Spring module to simplify the use of Spring Framework for Java Development.
@@ -48,4 +49,23 @@ Review guide for developing with Spring Boot Framework
 - The Initializr will allow the user to download a complete generated Spring Boot project matching their preferences. Open this in an IDE and you are ready to begin Spring Boot development.
 - Another option is to generate a Spring Boot project from your IDE. This varies from IDE to IDE and will require you to do some independent research.
 
+### Dependency Injection
+- The ability of an object to supply dependencies to another object.
+  - A class will use methods/access data of another class.
+- Classes used in dependency injection
+  - Client class
+    - the dependent class
+  - Service Class
+    - provides a service to the client class
+  - Injector Class
+    - injects the service class into the client class
+- Based on: <u>Inversion of Control</u>
+  - "A class should not configure its dependencies statically but should be configured by some other class from outside"
+- Types of Dependency Injection
+  - Constructor Injection
+  - Setter/Property Injection
+  - Interface Injection
+    
 
+### Sources
+- [Edureka! Spring Boot Lesson](https://www.youtube.com/watch?v=UfOxcrxhC0s)
