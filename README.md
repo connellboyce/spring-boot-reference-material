@@ -37,4 +37,14 @@ Review guide for developing with Spring Boot Framework
 - Spring has a "dependency injection framework" but Spring Boot has pre-configured technology and frameworks.
 - Spring Boot allows us to create a web application which can simply be run or executed. It is less complex than Spring. 
 
+### Installation and Setup
+- Can be done with either your IDE, if it has a plugin for creating a Spring Boot project, or the [Spring Initializr](https://start.spring.io/).
+  - Your machine will need to meet the system requirements for the technologies selected in the Initializr.
+
+![Spring Initializr Image](images/springinitializr.png)
+
+- Once you have selected your preferences, you have the option to add dependencies based on what your project will require. Don't worry, if you decide you need a dependency later on in the process you can add it easily later!
+- The Initializr will allow the user to download a complete generated Spring Boot project matching their preferences. Open this in an IDE and you are ready to begin Spring Boot development.
+- Another option is to generate a Spring Boot project from your IDE. This varies from IDE to IDE and will require you to do some independent research.
+
 
