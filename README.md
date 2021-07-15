@@ -63,8 +63,16 @@ Review guide for developing with Spring Boot Framework
   - "A class should not configure its dependencies statically but should be configured by some other class from outside"
 - Types of Dependency Injection
   - Constructor Injection
+    - Injector class supplies dependency through the constructor
   - Setter/Property Injection
+    - Injects to the setter method exposed by the client
   - Interface Injection
+    - Injector uses an interface to provide the dependency to the client class and clients must implement an interface with a setter method that will accept the dependency.
+- Benefits:
+  - Easier way to connect components
+  - Application is easier to extend
+  - Unit testing is made easier
+  - Reduces boiler plate code
     
 
 ### Sources
