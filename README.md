@@ -8,6 +8,7 @@ Review guide for developing with Spring Boot Framework
 - [Spring vs. Spring Boot](#spring-vs-spring-boot)
 - [Initializing a Spring Boot Project](#initializing-a-spring-boot-project)
 - [Dependency Injection](#dependency-injection)
+- [Making a Simple Web App](#making-a-simple-web-app)
 - [Sources](#sources)
 
 ### What is Spring Boot?
@@ -76,6 +77,41 @@ Review guide for developing with Spring Boot Framework
   - Reduces boiler plate code
 > [Example Package](src/main/java/com/connellboyce/springbootreferencematerial/dependencyinjection)
     
+### Making a Simple Web App
+- This is how to make a simple multi-page web app.
+- You will need the Thymeleaf dependency for this tutorial
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+```
+- You will need a controller which allows Spring Boot to return the HTML to the user.
+  - This will require the @Controller Spring Boot annotation
+- You will need to add libraries to your resources directory. It should look like this:
+> resources
+>>templates
+>>>index.html
+>
+>>static
+>>>css
+>>>>app.css
+>
+>>>js
+>>>>app.js
+>
+>>>images
+>>>>example.jpeg
 
+- Naming conventions are extremely important. Improperly named directories will not be found by Thymeleaf.
+- The controller should have a method for each html page it should be able to access and each method should have the @GetMapping annotation. This annotation takes a parameter which should be the endpoint the HTML page is accessed on.
+  - For example: the Blog page would have
+    - @GetMapping("/blog) &
+    - return "blog";
+    
+- You can configure what port the app should run on in the application.properties file. Just set server.port equal to the desired port.
+    
+> [Example](src/main/java/com/connellboyce/springbootreferencematerial/simplewebapp)
+    
 ### Sources
 - [Edureka! Spring Boot Lesson](https://www.youtube.com/watch?v=UfOxcrxhC0s)
