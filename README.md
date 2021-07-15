@@ -6,6 +6,7 @@ Review guide for developing with Spring Boot Framework
 - [Features of Spring Boot](#features-of-spring-boot)
 - [Why Spring Boot?](#why-spring-boot)
 - [Spring vs. Spring Boot](#spring-vs-spring-boot)
+- [Initializing a Spring Boot Project](#initializing-a-spring-boot-project)
 
 ### What is Spring Boot?
 - Spring Boot is a Spring module to simplify the use of Spring Framework for Java Development.
@@ -37,8 +38,8 @@ Review guide for developing with Spring Boot Framework
 - Spring has a "dependency injection framework" but Spring Boot has pre-configured technology and frameworks.
 - Spring Boot allows us to create a web application which can simply be run or executed. It is less complex than Spring. 
 
-### Installation and Setup
-- Can be done with either your IDE, if it has a plugin for creating a Spring Boot project, or the [Spring Initializr](https://start.spring.io/).
+### Initializing a Spring Boot Project
+- Can be done with the [Spring Initializr](https://start.spring.io/).
   - Your machine will need to meet the system requirements for the technologies selected in the Initializr.
 
 ![Spring Initializr Image](images/springinitializr.png)
