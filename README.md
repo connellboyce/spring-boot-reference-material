@@ -7,6 +7,7 @@ Review guide for developing with Spring Boot Framework
 - [Why Spring Boot?](#why-spring-boot)
 - [Spring vs. Spring Boot](#spring-vs-spring-boot)
 - [Initializing a Spring Boot Project](#initializing-a-spring-boot-project)
+- [Dependency Injection](#dependency-injection)
 - [Sources](#sources)
 
 ### What is Spring Boot?
@@ -21,7 +22,7 @@ Review guide for developing with Spring Boot Framework
 - Spring Initializr
 - Spring Actuator
 - Starter Dependency
-- Autoconfiguration
+- Auto-configuration
 - Logging and Security
 
 ### Why Spring Boot?
@@ -73,6 +74,7 @@ Review guide for developing with Spring Boot Framework
   - Application is easier to extend
   - Unit testing is made easier
   - Reduces boiler plate code
+> [Example Package](src/main/java/com/connellboyce/springbootreferencematerial/dependencyinjection)
     
 
 ### Sources
