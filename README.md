@@ -9,6 +9,7 @@ Review guide for developing with Spring Boot Framework
 - [Initializing a Spring Boot Project](#initializing-a-spring-boot-project)
 - [Dependency Injection](#dependency-injection)
 - [Making a Simple Web App](#making-a-simple-web-app)
+- [Making a Simple API](#making-a-simple-api)
 - [Sources](#sources)
 
 ### What is Spring Boot?
@@ -111,7 +112,22 @@ Review guide for developing with Spring Boot Framework
     
 - You can configure what port the app should run on in the application.properties file. Just set server.port equal to the desired port.
     
-> [Example](src/main/java/com/connellboyce/springbootreferencematerial/simplewebapp)
+> [Example Package](src/main/java/com/connellboyce/springbootreferencematerial/simplewebapp)
+    
+### Making a Simple API
+- Similar to Web App except returning/accepting values.
+- Create a controller with the @RestController annotation. The controller also gets a @RequestMapping annotation, and for simplicity set this to ("/api").
+- Within the body of the controller, you can have @GetMapping like the web app, but in addition can use @PostMapping, @PutMapping, and @DeleteMapping.
+  - You can use as many of each as you want.
+- The example I have used includes a validation dependency from Spring Boot:
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```
+- For things like Post, Put and Delete, a request object is needed. This should have field(s) to be accepted as parameter(s) and a getter for each field. These fields are accompanied by validation annotations such as @Email, @NotBlank, @NotNull and more. If the JSON body attached to the API request is invalid, it will throw an exception.
+> [Example Package](src/main/java/com/connellboyce/springbootreferencematerial/simpleapi)
     
 ### Sources
 - [Edureka! Spring Boot Lesson](https://www.youtube.com/watch?v=UfOxcrxhC0s)
